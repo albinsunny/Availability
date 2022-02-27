@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-public class AvailabilityController {
+public class UserAvailabilityController {
 
     @Autowired
     HomeService homeService;
@@ -26,6 +26,7 @@ public class AvailabilityController {
     UserService userService;
 
     @GetMapping("/availability/reset")
+    //TODO - Decommission when implementations are done
     public ResponseEntity<String> resetAvailabilities() {
         UserUtils.USER_HOMES = UserUtils.getHomes();
         return new ResponseEntity<>("Reset Successfully", HttpStatus.OK);
