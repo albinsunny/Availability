@@ -1,0 +1,4 @@
+abc
+d ->  stage
+-> commit 'These are the changes for D'
+-> push ->
